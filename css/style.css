@@ -55,6 +55,16 @@ wrapper-grid {
   color: #F0EFE9;
 }
 
+.section-title p {
+  color: #F94D1C;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -71,14 +81,14 @@ header .container {
     grid-template-areas: "logo cib social" "logo menu menu";
   }
 }
-header .container .btn-menubars {
+header .container .btnmenu-bars {
   grid-area: bars;
   border: none;
   font-size: 25px;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  header .container .btn-menubars {
+  header .container .btnmenu-bars {
     display: none;
   }
 }
@@ -237,7 +247,17 @@ header .container .menu .btn-login {
   }
 }
 
-.test {
+.brands .container .test {
+  display: flex;
+  justify-content: space-between;
   margin-top: 70px;
   border: 1px solid black;
+}
+@media (min-width: 992px) {
+  .brands .container img {
+    display: flex;
+  }
+}
+.brands .project-case .container .section-title {
+  text-align: center;
 }
