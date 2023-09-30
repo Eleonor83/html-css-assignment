@@ -352,3 +352,56 @@ header .container .menu .btn-login {
   margin-top: 50px;
   margin-bottom: 90px;
 }
+
+.footer {
+  background-color: #0E1021;
+  color: white;
+  padding: 16px;
+  height: 400px;
+  width: auto;
+}
+.footer .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo  social";
+}
+@media (min-width: 992px) {
+  .footer .container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "logo company help resources link" "text social";
+  }
+}
+.footer .logotype {
+  grid-area: logo;
+  margin-right: 70px;
+}
+.footer .company-info {
+  grid-area: company;
+}
+.footer .help-info {
+  grid-area: help;
+}
+.footer .resources-info {
+  grid-area: resources;
+}
+.footer .link-info {
+  grid-area: link;
+}
+.footer .socialmedia-bar {
+  grid-area: social;
+  display: none;
+}
+@media (min-width: 992px) {
+  .footer .socialmedia-bar {
+    display: block;
+  }
+}
+.footer a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+.footer a:hover {
+  color: #7c7c7c;
+}

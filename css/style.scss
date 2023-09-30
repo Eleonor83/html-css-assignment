@@ -387,7 +387,7 @@ header {
                         margin-left: 3px;
                     }
                 }
-                
+
                 &:hover .readmore{
                     text-decoration: underline;
                 }
@@ -396,6 +396,72 @@ header {
         .center-content{
             margin-top: 50px;
             margin-bottom: 90px;
+        }
+    }
+}
+
+.footer{
+
+    background-color: #0E1021;
+    color: white;
+    padding: 16px;
+    height: 400px;
+    width: auto;
+
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo  social";
+
+        @media (min-width: 992px) {
+        grid-template-columns: repeat(5, 1fr) ;
+        grid-template-areas: "logo company help resources link"
+                             "text social";
+        }
+    }
+
+    .logotype{
+        grid-area: logo;
+        margin-right: 70px;
+    }
+
+    .company-info{
+        grid-area: company;
+        
+
+    }
+
+    .help-info{
+        grid-area: help;
+
+    }
+
+    .resources-info {
+        grid-area: resources;
+
+    }
+
+    .link-info{
+        grid-area: link;
+    }
+
+    .socialmedia-bar{
+        grid-area: social;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        } 
+    }
+
+    a {
+        color: #191919;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        
+        &:hover {
+            color:#7c7c7c;
         }
     }
 }
