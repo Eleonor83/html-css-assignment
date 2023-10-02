@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;700;900&display=swap');
 
 html, body {
@@ -240,6 +240,15 @@ header {
 
 .showcase {
     background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+
+    .background-lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     .container {
         display: flex;
@@ -400,64 +409,86 @@ header {
     }
 }
 
-.footer{
+footer {
 
     background-color: #0E1021;
-    color: white;
+    color: #FFFFFF;
     padding: 16px;
     height: 400px;
     width: auto;
 
-    .container{
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr auto;
-        grid-template-areas: "logo  social";
-
-        @media (min-width: 992px) {
-        grid-template-columns: repeat(5, 1fr) ;
-        grid-template-areas: "logo company help resources link"
-                             "text social";
+    ul {
+        list-style-type: none;
+    
+        li {
+            margin-bottom: 8px; 
         }
     }
 
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+
+      //  @media (min-width: 992px) {
+
+        // }
+    }
+
+        div{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
     .logotype{
-        grid-area: logo;
-        margin-right: 70px;
+        width: 309px;
+        
+        p {
+        margin-top: 30px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        }
     }
 
     .company-info{
-        grid-area: company;
-        
+        width: 200pxpx;
 
     }
-
+    
     .help-info{
-        grid-area: help;
+        width: 200px;
 
     }
 
-    .resources-info {
-        grid-area: resources;
+    .resources-info{
+        width: 200px;
 
     }
 
-    .link-info{
-        grid-area: link;
-    }
+    .links-info{
+        width: 309px;
 
+    }
     .socialmedia-bar{
-        grid-area: social;
         display: none;
 
         @media (min-width: 992px) {
-            display: block;
+            display: flex;
+            justify-content: flex-end;
+            
         } 
     }
 
+    p{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
     a {
-        color: #191919;
-        font-size: 1.3rem;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
         margin-left: 10px;
         
         &:hover {
