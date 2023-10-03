@@ -177,6 +177,7 @@ header {
 
             @media (min-width: 992px) {
                 display: block;
+    
             } 
 
             a {
@@ -321,7 +322,7 @@ header {
     
     .container {
 
-        .test {
+        .brands {
         display: flex;
         justify-content: space-between;
         margin-top: 70px;
@@ -342,6 +343,33 @@ header {
             .section-title{
                 text-align: center;
             }
+        }
+    }
+}
+
+.features {
+
+    .container { 
+
+        h3{
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-top: 35px;
+            padding-bottom: 16px;
+        }
+
+        .section-title {
+            width: 420px;
+
+            .btn-yellow {
+
+            }
+        }
+
+        .accounting-square {
+            width: 300px;
+            height: auto;
         }
     }
 }
@@ -448,81 +476,87 @@ header {
 
 
 footer {
-
     background-color: #0E1021;
     color: #FFFFFF;
     padding: 16px;
-    height: 400px;
-    width: auto;
+
+    @media (min-width: 1200px) {
+        display: flex;
+    } 
 
     ul {
         list-style-type: none;
     
         li {
-            margin-bottom: 8px; 
+            margin-bottom: 15px; 
         }
     }
 
     .container{
-        display: flex;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "logo bars";
+        margin-top: 30px;
+        margin-left: 30px;
 
-      //  @media (min-width: 992px) {
+        @media (min-width: 992px) {
+        grid-template-columns: 1fr ;
+        grid-template-areas: "logo company help resources links"
+                             "logo cripto social";
 
-        // }
     }
 
-        div{
-            margin-top: 30px;
-            margin-left: 30px;
-        }
     .logotype{
-        width: 309px;
-        
+        grid-area: logo;
+        margin-right: 70px;
+
         p {
         margin-top: 30px;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
         }
     }
 
-    .company-info{
-        width: 200pxpx;
-
-    }
-    
-    .help-info{
-        width: 200px;
-
+    .company {
+        grid-area: company;
     }
 
-    .resources-info{
-        width: 200px;
-
+    .help{
+        grid-area: help;
     }
 
-    .links-info{
-        width: 309px;
-
+    .resources {
+        grid-area: resources;
     }
+
+    .links {
+        grid-area: links;
+    }
+
+    .cripto-copy {
+        grid-area: cripto;
+    }
+
     .socialmedia-bar{
+        grid-area: social;
         display: none;
 
         @media (min-width: 992px) {
             display: flex;
-            justify-content: flex-end;
-            
         } 
+
+        a {
+            color: white;
+        }
     }
 
     p{
+        color: #ccc8c8;
         font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 22px;
+        font-weight: 400;
+        font-size: 16px;
     }
+    
     a {
-        color: #FFFFFF;
+        color: #ccc8c8;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -533,4 +567,5 @@ footer {
             color:#7c7c7c;
         }
     }
+}
 }
