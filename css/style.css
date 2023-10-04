@@ -295,6 +295,11 @@ header .container .menu .btn-login {
 .brands {
   display: none;
 }
+@media (min-width: 992px) {
+  .brands {
+    display: flex;
+  }
+}
 .brands .container .brand {
   display: flex;
   justify-content: space-between;
@@ -310,7 +315,9 @@ header .container .menu .btn-login {
 }
 
 .features {
-  margin-top: 70px;
+  padding: 60px;
+}
+.features .container {
   display: block;
   justify-content: center;
   align-items: center;
@@ -319,13 +326,12 @@ header .container .menu .btn-login {
   gap: 70px;
 }
 @media (min-width: 992px) {
-  .features {
+  .features .container {
     display: flex;
-    border: 1px solid #191919;
-    padding: 80px 150px 80px 100px;
+    border: 2px solid #F0EFE9;
   }
 }
-.features .section-title {
+.features .container .section-title {
   display: block;
   justify-content: center;
   align-items: center;
@@ -333,24 +339,27 @@ header .container .menu .btn-login {
   width: auto;
 }
 @media (min-width: 992px) {
-  .features .section-title {
+  .features .container .section-title {
     display: block;
     justify-content: start;
     align-items: start;
     padding-bottom: 160px;
   }
 }
-.features .section-title .btn-yellow {
+.features .container .section-title .btn-yellow {
   width: auto;
 }
-.features h3 {
+.features .container h2 {
+  padding-bottom: 40px;
+}
+.features .container h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
   padding-top: 35px;
   padding-bottom: 16px;
 }
-.features .squares {
+.features .container .squares {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 15px;
@@ -358,14 +367,14 @@ header .container .menu .btn-login {
   height: auto;
 }
 @media (min-width: 992px) {
-  .features .squares {
+  .features .container .squares {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
     gap: 15px;
   }
 }
-.features .square {
+.features .container .square {
   padding: 30px;
 }
 

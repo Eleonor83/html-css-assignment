@@ -320,13 +320,17 @@ header {
 
 .brands{
     display: none;
+
+    @media (min-width: 992px){
+        display:flex;
+    }
+
     .container {
 
         .brand {
         display: flex;
         justify-content: space-between;
         margin-top: 70px;
-;
         }
      
         img{
@@ -346,8 +350,11 @@ header {
     }
 }
 
-.features {
-    margin-top: 70px;
+.features{ 
+    padding: 60px;
+
+.container {
+    
     display: block;
     justify-content: center;
     align-items: center;
@@ -357,8 +364,8 @@ header {
 
     @media (min-width:992px){
         display: flex;
-        border: 1px solid #191919;
-        padding: 80px 150px 80px 100px;
+        border: 2px solid #F0EFE9;
+        //padding: 80px 150px 80px 100px;
     }
 
     .section-title { 
@@ -380,6 +387,9 @@ header {
         }
         }
 
+        h2 {
+            padding-bottom: 40px;
+        }
         h3{
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -406,11 +416,11 @@ header {
         .square {
             padding: 30px;
         }
-    
+}
 }
 
-
 .about-company { 
+    
     .container {
         display: flex;
         margin-top: 70px;
