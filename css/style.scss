@@ -350,6 +350,7 @@ header {
     }
 }
 
+
 .features{ 
     padding: 60px;
 
@@ -388,7 +389,7 @@ header {
         }
 
         h2 {
-            padding-bottom: 40px;
+            padding-bottom: 20px;
         }
         h3{
             font-family: 'DM Sans', sans-serif;
@@ -419,17 +420,36 @@ header {
 }
 }
 
+
 .about-company { 
-    
     .container {
         display: flex;
         margin-top: 70px;
 
         img {
+            margin-left: 60px;
             margin-right: 60px;
         }
-        .about-company {
-            display: block;
+
+        .about {
+            margin-left: 60px;
+            margin-right: 100px;
+
+            h2 {
+                margin-bottom: 0px;
+            }
+            
+            p{
+                border-right: 1px solid #DAD9D3;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+            }
+
+            //a {
+                text-decoration: none;
+                color: #191919;
+            }
         }
     }
 }
@@ -601,7 +621,10 @@ footer {
     }
 
     .hr {
-    color: #707070;
+    //color: #707070;
+    height: 2px;
+    width: auto;
+    border-top: 1px solid #707070;
     }
 
     .lowfoot {
@@ -610,8 +633,6 @@ footer {
         align-items: center;
 
         .socialmedia-bar{
-            grid-area: social;
-            display: none;
 
             @media (min-width: 992px) {
                 display: flex;

@@ -350,7 +350,7 @@ header .container .menu .btn-login {
   width: auto;
 }
 .features .container h2 {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .features .container h3 {
   font-family: "DM Sans", sans-serif;
@@ -383,10 +383,18 @@ header .container .menu .btn-login {
   margin-top: 70px;
 }
 .about-company .container img {
+  margin-left: 60px;
   margin-right: 60px;
 }
-.about-company .container .about-company {
-  display: block;
+.about-company .container .about {
+  margin-left: 60px;
+  margin-right: 100px;
+}
+.about-company .container .about p {
+  border-right: 1px solid #DAD9D3;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .project-case .container .section-title {
@@ -529,16 +537,14 @@ footer .container a:hover {
   color: #7c7c7c;
 }
 footer .hr {
-  color: #707070;
+  height: 2px;
+  width: auto;
+  border-top: 1px solid #707070;
 }
 footer .lowfoot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-footer .lowfoot .socialmedia-bar {
-  grid-area: social;
-  display: none;
 }
 @media (min-width: 992px) {
   footer .lowfoot .socialmedia-bar {
