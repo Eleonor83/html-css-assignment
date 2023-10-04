@@ -292,11 +292,13 @@ header .container .menu .btn-login {
   }
 }
 
-.brands .container .brands {
+.brands {
+  display: none;
+}
+.brands .container .brand {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
-  border: 1px solid black;
 }
 @media (min-width: 992px) {
   .brands .container img {
@@ -308,6 +310,7 @@ header .container .menu .btn-login {
 }
 
 .features {
+  margin-top: 70px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -321,48 +324,62 @@ header .container .menu .btn-login {
     border: 1px solid #191919;
     padding: 80px 150px 80px 100px;
   }
-  .features .section-title {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    width: auto;
-  }
 }
-@media (min-width: 992px) and (min-width: 992px) {
+.features .section-title {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  width: auto;
+}
+@media (min-width: 992px) {
   .features .section-title {
     display: block;
     justify-content: start;
     align-items: start;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
   }
+}
+.features .section-title .btn-yellow {
+  width: auto;
+}
+.features h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+}
+.features .squares {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 992px) {
-  .features .section-title h3 {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    padding-top: 35px;
-    padding-bottom: 16px;
-  }
-  .features .section-title .accounting-squares {
+  .features .squares {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     gap: 15px;
-    width: 100%;
-    height: auto;
   }
 }
-.features .about-company .container {
+.features .square {
+  padding: 30px;
+}
+
+.about-company .container {
   display: flex;
   margin-top: 70px;
 }
-.features .about-company .container img {
+.about-company .container img {
   margin-right: 60px;
 }
-.features .about-company .container .about-company {
+.about-company .container .about-company {
   display: block;
 }
+
 .project-case .container .section-title {
   text-align: center;
 }
@@ -452,64 +469,38 @@ footer {
   background-color: #0E1021;
   color: #FFFFFF;
   padding: 16px;
+  position: relative;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   footer {
     display: flex;
   }
 }
-footer ul {
-  list-style-type: none;
-}
-footer ul li {
-  margin-bottom: 15px;
-}
 footer .container {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "logo bars";
-  margin-top: 30px;
-  margin-left: 30px;
+  justify-content: center;
+  grid-template-columns: repeat 2, 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  text-align: left;
 }
 @media (min-width: 992px) {
   footer .container {
-    grid-template-columns: 1fr;
-    grid-template-areas: "logo company help resources links" "logo cripto social";
+    grid-template-columns: repeat 5, 1fr;
+    justify-content: space-between;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+    padding-top: 100px;
+    padding-bottom: 90px;
   }
 }
-footer .container .logotype {
-  grid-area: logo;
-  margin-right: 70px;
+footer .container ul {
+  list-style-type: none;
 }
-footer .container .logotype p {
-  margin-top: 30px;
-}
-footer .container .company {
-  grid-area: company;
-}
-footer .container .help {
-  grid-area: help;
-}
-footer .container .resources {
-  grid-area: resources;
-}
-footer .container .links {
-  grid-area: links;
-}
-footer .container .cripto-copy {
-  grid-area: cripto;
-}
-footer .container .socialmedia-bar {
-  grid-area: social;
-  display: none;
-}
-@media (min-width: 992px) {
-  footer .container .socialmedia-bar {
-    display: flex;
-  }
-}
-footer .container .socialmedia-bar a {
-  color: white;
+footer .container ul li {
+  margin-bottom: 15px;
 }
 footer .container p {
   color: #ccc8c8;
@@ -527,4 +518,24 @@ footer .container a {
 }
 footer .container a:hover {
   color: #7c7c7c;
+}
+footer .hr {
+  color: #707070;
+}
+footer .lowfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .lowfoot .socialmedia-bar {
+  grid-area: social;
+  display: none;
+}
+@media (min-width: 992px) {
+  footer .lowfoot .socialmedia-bar {
+    display: flex;
+  }
+}
+footer .lowfoot .socialmedia-bar a {
+  color: white;
 }
