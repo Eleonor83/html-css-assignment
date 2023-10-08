@@ -399,6 +399,7 @@ header .container .menu .btn-login {
   display: flex;
   margin-top: 70px;
   position: relative;
+  margin-bottom: 120px;
 }
 .about-company .container img {
   margin-left: 60px;
@@ -451,11 +452,6 @@ header .container .menu .btn-login {
   font-weight: 300;
   color: #191919;
 }
-.about-company .container .about .buttons {
-  bottom: 0;
-  height: 60px;
-  width: auto;
-}
 .about-company .container .about .buttons .btn-black {
   background-color: #191919;
   border: 1px solid #191919;
@@ -478,11 +474,54 @@ header .container .menu .btn-login {
 }
 .about-company .container .about .buttons .fa-regular {
   font-size: 50px;
-  bottom: 0;
 }
 .about-company .container .about .buttons a {
   text-decoration: none;
   color: #191919;
+}
+
+.our-services {
+  background-color: #F0EFE9;
+}
+.our-services .container {
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+.our-services .container .section-title {
+  width: 510px;
+  height: auto;
+  padding: 0;
+  padding-bottom: 50px;
+}
+.our-services .container .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-services .container .boxes img {
+  margin-bottom: 30px;
+}
+.our-services .container .boxes .box {
+  width: 310px;
+  height: 340px;
+  margin-right: 40px;
+}
+.our-services .container .boxes .box h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .our-services .container .boxes .box h3 {
+    text-align: left;
+  }
+}
+.our-services .container .boxes .box a {
+  font-size: 30px;
 }
 
 .project-case .container .section-title {

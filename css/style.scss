@@ -350,7 +350,6 @@ header {
     }
 }
 
-
 .features{
     border: none;
 
@@ -436,12 +435,12 @@ header {
 }
 }
 
-
 .about-company { 
     .container {
         display: flex;
         margin-top: 70px;
         position: relative;
+        margin-bottom: 120px;
 
         img {
             margin-left: 60px;
@@ -493,20 +492,16 @@ header {
             .section-title {
                 padding: 0px;
                 padding-bottom: 20px;
-        }
+            }
 
             .about_text {
                 font-family: 'Inter', sans-serif;
                 font-size: 15px;
                 font-weight: 300;
                 color: #191919;
-
             }
 
             .buttons {
-                bottom: 0;
-                height: 60px;
-                width: auto;
 
                 .btn-black {
                     background-color: #191919;
@@ -533,8 +528,8 @@ header {
 
                 .fa-regular {
                     font-size: 50px;
-                    bottom: 0;
                 }
+
                 a {
                     text-decoration: none;
                     color: #191919;
@@ -544,14 +539,59 @@ header {
     }
 }
 
+.our-services {
+    background-color: #F0EFE9;
 
-// .our-services {
-    
-//     .container {
+         .container {
+            justify-content: center;
+            align-items: center;
+            padding-top: 120px;
 
+            .section-title {
+                width: 510px;
+                height: auto;
+                padding: 0;
+                padding-bottom: 50px;
+                
+            }
 
-//         }
-// } 
+            .boxes {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    margin-bottom: 30px;
+                }
+
+                .box{
+                    width: 310px;
+                    height: 340px;
+                    margin-right: 40px;
+                
+                    h3{
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        padding-top: 35px;
+                        padding-bottom: 16px;
+            
+                        text-align: center;
+            
+                        @media (min-width:992px) {
+                            text-align: left;
+                        }
+                }
+
+                    a {
+
+                        font-size: 30px;
+                    }
+            }
+            
+        }
+    }   
+}
 
 
 .project-case {
