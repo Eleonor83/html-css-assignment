@@ -411,23 +411,78 @@ header .container .menu .btn-login {
   height: 180px;
   background-color: #BEEBFF;
   color: black;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.about-company .container .image_info .info {
+  margin-left: 20px;
+}
+.about-company .container .image_info .info span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.about-company .container .image_info .info .name {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.about-company .container .image_info .info .title {
+  color: #F94D1C;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.about-company .container .image_info .info p {
+  margin-top: 10px;
 }
 .about-company .container .about {
   margin-left: 60px;
   margin-right: 100px;
-  text-decoration: none;
-  color: #191919;
 }
-.about-company .container .about h2 {
-  margin-bottom: 0px;
+.about-company .container .about .section-title {
+  padding: 0px;
+  padding-bottom: 20px;
 }
-.about-company .container .about p {
-  border-right: 1px solid #DAD9D3;
+.about-company .container .about .about_text {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  color: #191919;
+}
+.about-company .container .about .buttons {
+  bottom: 0;
+  height: 60px;
+  width: auto;
+}
+.about-company .container .about .buttons .btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-right: 35px;
+}
+.about-company .container .about .buttons .btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.about-company .container .about .buttons .btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
+}
+.about-company .container .about .buttons .fa-regular {
+  font-size: 50px;
+  bottom: 0;
+}
+.about-company .container .about .buttons a {
+  text-decoration: none;
+  color: #191919;
 }
 
 .project-case .container .section-title {

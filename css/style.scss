@@ -446,7 +446,6 @@ header {
         img {
             margin-left: 60px;
             margin-right: 60px;
-           // z-index: 0;
         }
 
         .image_info {
@@ -456,29 +455,94 @@ header {
             height: 180px;
             background-color:#BEEBFF ;
             color: black;
+            display: flex;
             justify-content: center;
             align-items: center;
+        
+            .info {
+                margin-left: 20px;
+
+                span {
+                    display: inline-block;
+                    margin-right: 10px; 
+                }
+
+                .name {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                .title {
+                    color: #F94D1C;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                p {
+                    margin-top: 10px; 
+                }
+            }
         }
+
         .about {
             margin-left: 60px;
             margin-right: 100px;
 
-            h2 {
-                margin-bottom: 0px;
-            }
-            p{
-                border-right: 1px solid #DAD9D3;
+            .section-title {
+                padding: 0px;
+                padding-bottom: 20px;
+        }
+
+            .about_text {
                 font-family: 'Inter', sans-serif;
                 font-size: 15px;
                 font-weight: 300;
+                color: #191919;
+
             }
 
-            //a {
-                text-decoration: none;
-                color: #191919;
+            .buttons {
+                bottom: 0;
+                height: 60px;
+                width: auto;
+
+                .btn-black {
+                    background-color: #191919;
+                    border: 1px solid #191919;
+                    color: #FFFFFF; 
+                    text-decoration: none;
+                    padding: 15px 30px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    margin-right: 35px;
+                
+                    i {
+                        margin-left: 8px;
+                        font-size: 0.9em;
+                    }
+                
+                    &:hover{
+                        background-color: #FFFFFF;
+                        border: 1px solid #191919;
+                        color: #191919;
+                    }
+                }
+
+                .fa-regular {
+                    font-size: 50px;
+                    bottom: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: #191919;
+                }
             }
         }
     }
+}
 
 
 // .our-services {
