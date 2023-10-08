@@ -315,20 +315,27 @@ header .container .menu .btn-login {
 }
 
 .features {
-  padding: 60px;
+  border: none;
+}
+@media (min-width: 992px) {
+  .features {
+    width: 1520px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border: 2px solid #F0EFE9;
+    padding: 80px 200px 80px 100px;
+  }
 }
 .features .container {
-  display: block;
-  justify-content: center;
-  align-items: center;
   border: none;
   padding: 40px;
-  gap: 70px;
 }
 @media (min-width: 992px) {
   .features .container {
     display: flex;
-    border: 2px solid #F0EFE9;
+    gap: 100px;
   }
 }
 .features .container .section-title {
@@ -336,18 +343,25 @@ header .container .menu .btn-login {
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .features .container .section-title {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding-bottom: 160px;
+    padding: 0px;
+    padding-right: 90px;
+    height: auto;
+    width: 100%;
   }
 }
 .features .container .section-title .btn-yellow {
-  width: auto;
+  height: auto;
+  width: 100%;
+  text-align: center;
 }
 .features .container h2 {
   padding-bottom: 20px;
@@ -358,6 +372,12 @@ header .container .menu .btn-login {
   font-size: 22px;
   padding-top: 35px;
   padding-bottom: 16px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .features .container h3 {
+    text-align: left;
+  }
 }
 .features .container .squares {
   display: grid;
@@ -374,21 +394,34 @@ header .container .menu .btn-login {
     gap: 15px;
   }
 }
-.features .container .square {
-  padding: 30px;
-}
 
 .about-company .container {
   display: flex;
   margin-top: 70px;
+  position: relative;
 }
 .about-company .container img {
   margin-left: 60px;
   margin-right: 60px;
 }
+.about-company .container .image_info {
+  position: absolute;
+  bottom: 45px;
+  width: 370px;
+  height: 180px;
+  background-color: #BEEBFF;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
 .about-company .container .about {
   margin-left: 60px;
   margin-right: 100px;
+  text-decoration: none;
+  color: #191919;
+}
+.about-company .container .about h2 {
+  margin-bottom: 0px;
 }
 .about-company .container .about p {
   border-right: 1px solid #DAD9D3;
