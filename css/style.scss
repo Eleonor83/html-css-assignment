@@ -559,13 +559,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 
          .container {
             display: flex;
             flex-direction: column;
-            //justify-content: center;
-            //align-items: center;
             height: 650px;
             position: relative;
 
@@ -648,8 +645,7 @@ header {
 .why_choose_us {
     
     .container {
-        display: flex;
-        
+        display: flex; 
 
         .wcu_right {
             .wcu_picture {
@@ -665,10 +661,6 @@ header {
                     height: 425px;
                     width: 1100px;
                     background-color: #F0EFE9;
-                }
-
-                img {
-
                 }
             }
         }
@@ -766,6 +758,73 @@ header {
             margin-top: 50px;
             margin-bottom: 90px;
         }
+    }
+}
+
+.meet_our_team {
+    background-color: #F0D082;
+
+    .container{ 
+        display: flex;
+        flex-direction: column;
+
+        .title-button {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+            margin-top: 120px;
+            margin-bottom: 100px;
+
+            .section-title {
+                padding: 0
+            }
+
+            .btn-yellow {
+
+                border: 2px solid #191919;
+                font-weight: 400;
+            }
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                padding-top: 30px;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                text-align: center;
+    
+                @media (min-width:992px) {
+                    text-align: left;
+                }
+            }
+        }
+
+        .dots {
+            text-align: center;
+            padding: 30px;
+            a {
+                color: #b1b0b085;
+            
+            &:hover {
+                color: #191919;
+            }
+            }
+
+            
+        }
+    }
+
+    .test {
+        text-align: center;
+        background-color: white;
+        width: 1520px;
+        height: auto;
+
+        
     }
 }
 
