@@ -555,11 +555,29 @@ header {
 
 .our-services {
     background-color: #F0EFE9;
+    height: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
          .container {
-            justify-content: center;
-            align-items: center;
-            padding-top: 120px;
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            //align-items: center;
+            height: 650px;
+            position: relative;
+
+            .button {                 
+                align-self: flex-end;
+                margin: 0 auto;
+                margin-top: 70px;
+                
+                .btn-transparent {
+                    border-color: #b1b0b0;
+                }
+            }
 
             .section-title {
                 width: 510px;
@@ -602,11 +620,8 @@ header {
                         }
                     }
 
-                    a {
-                        
-                    }
-
                     .fa-thin {
+                        margin-left: 200px;
                         font-size: 25px;
                         background-color: black;
                         color: white;
@@ -618,11 +633,16 @@ header {
                             color: #191919;
                         }
                     } 
-
             }
             
         }
-    }   
+    }  
+
+    .background-lines {
+       position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 
