@@ -573,6 +573,52 @@ header .container .menu .btn-login {
   right: 0;
 }
 
+.why_choose_us .container {
+  display: flex;
+}
+.why_choose_us .container .wcu_right .wcu_picture {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.why_choose_us .container .wcu_right .wcu_picture .greybox {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 425px;
+  width: 1100px;
+  background-color: #F0EFE9;
+}
+.why_choose_us .container .wcu_left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 70px;
+}
+.why_choose_us .container .wcu_left .section-title {
+  padding: 0;
+  width: 400px;
+}
+.why_choose_us .container .wcu_left .wcu_box {
+  margin-top: 30px;
+}
+.why_choose_us .container .wcu_left .wcu_box img {
+  float: left;
+  margin-right: 30px;
+}
+.why_choose_us .container .wcu_left .wcu_box h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .why_choose_us .container .wcu_left .wcu_box h3 {
+    text-align: left;
+  }
+}
+
 .project-case .container .section-title {
   text-align: center;
 }

@@ -645,6 +645,66 @@ header {
     }
 }
 
+.why_choose_us {
+    
+    .container {
+        display: flex;
+        
+
+        .wcu_right {
+            .wcu_picture {
+                position: relative;
+                margin-top: 80px;
+                display: flex;
+                flex-direction: column;
+
+                .greybox {
+                    position: absolute;
+                    bottom: 0;
+                    z-index: -1;
+                    height: 425px;
+                    width: 1100px;
+                    background-color: #F0EFE9;
+                }
+
+                img {
+
+                }
+            }
+        }
+
+        .wcu_left {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-top: 70px;
+
+            .section-title{
+                padding: 0;
+                width: 400px;
+            }
+
+            .wcu_box{
+                margin-top: 30px;
+                img {
+                    float: left;
+                    margin-right: 30px;
+                }
+                h3{   
+                    
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    text-align: center;
+        
+                    @media (min-width:992px) {
+                        text-align: left;
+                    }
+                }
+                }
+            }
+        }
+    }
 
 .project-case {
     .container {
