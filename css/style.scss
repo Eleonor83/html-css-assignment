@@ -763,6 +763,10 @@ header {
 
 .meet_our_team {
     background-color: #F0D082;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .container{ 
         display: flex;
@@ -780,7 +784,7 @@ header {
             }
 
             .btn-yellow {
-
+                margin-top: 0px;
                 border: 2px solid #191919;
                 font-weight: 400;
             }
@@ -805,7 +809,8 @@ header {
 
         .dots {
             text-align: center;
-            padding: 30px;
+            padding: 50px;
+            margin-bottom: 50px;
             a {
                 color: #b1b0b085;
             
@@ -818,13 +823,64 @@ header {
         }
     }
 
-    .test {
-        text-align: center;
+    .testy {
         background-color: white;
         width: 1520px;
         height: auto;
+        margin-bottom: 120px;
+        position: relative;
 
-        
+        .section-title{
+            text-align: center;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-evenly;
+            
+            .each_testimony { 
+                width: 340px;
+
+                .fa-star {
+                    color: #f94d1c;
+                }
+
+                p {
+                    padding-right: 50px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                
+                .title {
+
+                    img {
+                        float: left;
+                        margin-right: 10px;
+                    }
+
+                    p{
+                        color: #F94D1C;
+                        padding: 0;
+                    }
+                
+                    h2 {
+                        padding-top: 5px;
+                        color: #191919;
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        //margin: 0;
+                    }
+                }            
+            }
+        }
+        .center-content {
+            margin: 110px;
+
+            .btn-black{ 
+                font-weight: 400;
+            }  
+        }
     }
 }
 

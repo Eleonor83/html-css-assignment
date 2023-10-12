@@ -674,6 +674,10 @@ header .container .menu .btn-login {
 
 .meet_our_team {
   background-color: #F0D082;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .meet_our_team .container {
   display: flex;
@@ -690,6 +694,7 @@ header .container .menu .btn-login {
   padding: 0;
 }
 .meet_our_team .container .title-button .btn-yellow {
+  margin-top: 0px;
   border: 2px solid #191919;
   font-weight: 400;
 }
@@ -711,7 +716,8 @@ header .container .menu .btn-login {
 }
 .meet_our_team .container .dots {
   text-align: center;
-  padding: 30px;
+  padding: 50px;
+  margin-bottom: 50px;
 }
 .meet_our_team .container .dots a {
   color: rgba(177, 176, 176, 0.5215686275);
@@ -719,11 +725,51 @@ header .container .menu .btn-login {
 .meet_our_team .container .dots a:hover {
   color: #191919;
 }
-.meet_our_team .test {
-  text-align: center;
+.meet_our_team .testy {
   background-color: white;
   width: 1520px;
   height: auto;
+  margin-bottom: 120px;
+  position: relative;
+}
+.meet_our_team .testy .section-title {
+  text-align: center;
+}
+.meet_our_team .testy .testimonials {
+  display: flex;
+  justify-content: space-evenly;
+}
+.meet_our_team .testy .testimonials .each_testimony {
+  width: 340px;
+}
+.meet_our_team .testy .testimonials .each_testimony .fa-star {
+  color: #f94d1c;
+}
+.meet_our_team .testy .testimonials .each_testimony p {
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.meet_our_team .testy .testimonials .each_testimony .title img {
+  float: left;
+  margin-right: 10px;
+}
+.meet_our_team .testy .testimonials .each_testimony .title p {
+  color: #F94D1C;
+  padding: 0;
+}
+.meet_our_team .testy .testimonials .each_testimony .title h2 {
+  padding-top: 5px;
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.meet_our_team .testy .center-content {
+  margin: 110px;
+}
+.meet_our_team .testy .center-content .btn-black {
+  font-weight: 400;
 }
 
 .newsletter {
