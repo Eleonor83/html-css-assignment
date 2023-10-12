@@ -794,11 +794,37 @@ header .container .menu .btn-login {
 }
 .articles_and_news .container .articles .article {
   padding-right: 30px;
+  position: relative;
+}
+.articles_and_news .container .articles .article .date {
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  width: 56px;
+  height: auto;
+  background-color: #F9D783;
+}
+.articles_and_news .container .articles .article .date h3 {
+  padding: 0;
+  margin: 0;
+}
+.articles_and_news .container .articles .article .date p {
+  margin: 0;
 }
 .articles_and_news .container .articles .article p {
   margin-top: 20px;
 }
-.articles_and_news .container .articles .article h3 {
+.articles_and_news .container .articles .article a {
+  text-decoration: none;
+  color: #191919;
+}
+.articles_and_news .container .articles .article a:hover {
+  color: #b1b0b0;
+}
+.articles_and_news .container .articles .article a h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -806,7 +832,7 @@ header .container .menu .btn-login {
   padding-right: 120px;
 }
 @media (min-width: 992px) {
-  .articles_and_news .container .articles .article h3 {
+  .articles_and_news .container .articles .article a h3 {
     text-align: left;
   }
 }

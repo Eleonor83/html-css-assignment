@@ -235,8 +235,8 @@ header {
             margin-top: 12px;
             margin-bottom: 12px;
         }
+        }
     }
-}
 }
 
 .showcase {
@@ -910,24 +910,49 @@ header {
             justify-content: space-evenly;
             .article {
                 padding-right: 30px;
-                img{
+                position: relative;
+                .date {
+                    position: absolute;
+                    justify-content: center;
+                    align-content: center;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    padding: 10px;
+                    width: 56px;
+                    height: auto;
+                    background-color:#F9D783;
 
+                    h3 {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    p{
+                        margin: 0;
+                    }
                 }
                 p {
                     margin-top: 20px;
                 }
-                h3 {                     
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px;
-                    text-align: center;
-                    padding-right: 120px;
-        
-                    @media (min-width:992px) {
-                        text-align: left;
-                    }
+                a{
+                    text-decoration: none;
+                    color: #191919;
 
+                    &:hover {
+                        color: #b1b0b0;
+                    }
+                    h3 {                     
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        text-align: center;
+                        padding-right: 120px;
+            
+                        @media (min-width:992px) {
+                            text-align: left;
+                        }
+                    }
                 }
+
             }
         }
         .dots {
