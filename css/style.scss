@@ -1209,3 +1209,53 @@ footer {
             }
         }
     }
+
+.info_box{
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        .box {
+            display: flex;
+            border: 1px solid #b1b0b0;
+            padding: 50px;
+            padding-right: 100px;
+            
+            i {
+                float: left;
+                font-size: 25px;
+                height: 50px ;
+                background-color: black;
+                color: white;
+                border-radius: 50%;
+                padding: 15px;
+            }
+
+            .info {
+                display: block;
+                margin-left: 20px;
+
+                
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    text-align: center;
+
+                    @media (min-width:992px) {
+                        text-align: left;
+                    }
+                }
+
+                p {
+                  margin: 0;  
+                }
+            }
+        }
+    }
+}

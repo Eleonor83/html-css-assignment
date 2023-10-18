@@ -1048,3 +1048,44 @@ footer .bottom .socialmedia-bar a:hover {
     display: block;
   }
 }
+
+.info_box .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.info_box .container .box {
+  display: flex;
+  border: 1px solid #b1b0b0;
+  padding: 50px;
+  padding-right: 100px;
+}
+.info_box .container .box i {
+  float: left;
+  font-size: 25px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+}
+.info_box .container .box .info {
+  display: block;
+  margin-left: 20px;
+}
+.info_box .container .box .info h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .info_box .container .box .info h3 {
+    text-align: left;
+  }
+}
+.info_box .container .box .info p {
+  margin: 0;
+}
