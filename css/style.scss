@@ -1259,3 +1259,59 @@ footer {
         }
     }
 }
+
+.form_section {
+    
+    .container {
+        padding: 100px;
+        background-color:#F0EFE9 ;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 180px;
+
+        .section-title {
+            text-align: center;
+            padding: 50px 300px 50px 300px;
+
+            h2 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+            }
+        }
+
+        form {
+            display: block;
+            justify-content: center;
+            align-items: center;
+
+            .mb-3{
+
+                input {
+                    width: 100%;
+                    border-radius: 25px;
+                    border: none;
+                }
+    
+                textarea {
+                    border: none;
+                    resize: none;
+                    height: 150px;
+                    width: 100%;
+                    border-radius: 25px;
+                    padding-top: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        
+        .btn-yellow {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+        }
+
+    }
+}
